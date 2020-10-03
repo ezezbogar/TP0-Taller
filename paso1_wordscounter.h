@@ -1,10 +1,8 @@
 #ifndef __WORDSCOUNTER_H__
 #define __WORDSCOUNTER_H__
 
-#include <string.h>
-#include <stdio.h>
 
-// Tipo wordscounter_t: procesa cantidad de palabras dentro de un archivo.
+// Tipo wordscounter_t: almacena la cantidad de palabras procesadas de un archivo.
 typedef struct {
     size_t words;
 } wordscounter_t;
