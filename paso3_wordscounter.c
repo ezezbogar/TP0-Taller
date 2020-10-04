@@ -1,7 +1,8 @@
-#include "paso2_wordscounter.h"
+#include "paso3_wordscounter.h"
 #include <string.h>
 #include <stdio.h>
 #include <stdbool.h>
+#include <stdlib.h>
 
 #define STATE_WAITING_WORD 0
 #define STATE_IN_WORD 1
