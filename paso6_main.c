@@ -1,10 +1,10 @@
 #include <string.h>
 #include <stdio.h>
 #include <stdbool.h>
-#include "paso5_wordscounter.h"
+#include "paso6_wordscounter.h"
 
 #define SUCCESS 0
-#define ERROR -1
+#define ERROR 1
 
 int main(int argc, char* argv[]) {
     FILE* input;
