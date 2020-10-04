@@ -1,7 +1,7 @@
+#include "paso2_wordscounter.h"
 #include <string.h>
 #include <stdio.h>
 #include <stdbool.h>
-#include "paso1_wordscounter.h"
 
 #define STATE_WAITING_WORD 0
 #define STATE_IN_WORD 1
@@ -10,8 +10,7 @@
 // Compara el caracter leído c y define el nuevo estado.
 static char wordscounter_next_state(wordscounter_t *self, char state, char c);
 
-void wordscounter_create(wordscounter_t *self)
-{
+void wordscounter_create(wordscounter_t *self) {
     self->words = 0;
 }
 
@@ -24,7 +23,7 @@ void wordscounter_process(wordscounter_t *self, FILE *text_file) {
     do {
         int c = getc(text_file);
         state = wordscounter_next_state(self, state, c);
-    } while(state != STATE_FINISHED);
+    } while (state != STATE_FINISHED);
 }
 
 static char wordscounter_next_state(wordscounter_t *self, char state, char c) {
@@ -38,18 +37,17 @@ static char wordscounter_next_state(wordscounter_t *self, char state, char c) {
     delim_words[6] = '\0';
 
     char next_state = state;
-    if (  c == EOF) {
+    if (c == EOF) {
         next_state = STATE_FINISHED;
     } else if (state == STATE_WAITING_WORD) {
         if (strchr(delim_words, c) == NULL)
             next_state = STATE_IN_WORD;
-    }
-    else if (state == STATE_IN_WORD) {
-        if(strchr(delim_words, c) != NULL) {
+    } else if (state == STATE_IN_WORD) {
+        if (strchr(delim_words, c) != NULL) {
             self->words++;
             next_state = STATE_WAITING_WORD;
         }
     }
-    return next_state ;
+    return next_state;
 }
 
