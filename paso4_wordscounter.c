@@ -1,4 +1,4 @@
-#include "paso3_wordscounter.h"
+#include "paso4_wordscounter.h"
 #include <string.h>
 #include <stdio.h>
 #include <stdbool.h>
@@ -13,6 +13,10 @@ static char wordscounter_next_state(wordscounter_t *self, char state, char c);
 
 void wordscounter_create(wordscounter_t *self) {
     self->words = 0;
+}
+
+void wordscounter_destroy(wordscounter_t *self) {
+    //do nothing
 }
 
 size_t wordscounter_get_words(wordscounter_t *self) {
