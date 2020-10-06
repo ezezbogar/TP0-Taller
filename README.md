@@ -6,7 +6,11 @@
 
 
 
+​	El presente trabajo hace hincapié en el correcto entendimiento y uso de las herramientas de desarrollo utilizadas en el curso. El trabajo esta dividido en pasos, los cuales pueden representar estados o versiones de un programa en pleno desarrollo. En cada uno de estos se tratará de identificar el motivo de diferentes errores con la ayuda de Valgrind, GDB y el SERCOM para su posterior corrección.
+
 ### Paso 0: Entorno de Trabajo
+
+​	Una vez listo el ambiente de trabajo local se compila y ejecuta una aplicación simple ISO C que imprime por pantalla el mensaje “Hola Mundo” y finalice retornando 0 (cero). Luego se ejecuta dicha aplicación utilizando Valgrind.
 
 ```
 (base) ezezbogar@Ezequiel:~/Desktop$ gcc main.c -o tp
