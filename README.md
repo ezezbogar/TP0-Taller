@@ -1,3 +1,11 @@
+# TP0: Contador de palabras
+
+## Ezequiel Zbogar - 102216
+
+### Taller de Programación I
+
+
+
 ### Paso 0: Entorno de Trabajo
 
 ```
@@ -1506,4 +1514,6 @@ No se encontraron diferencias.
 ​	Como se pudo ver en el paso anterior, esta última entrega pasa correctamente todas las pruebas ejecutadas por el SERCOM
 
 ![Captura del SERCOM](https://github.com/ezezbogar/TP0-Taller/blob/main/pruebas.png?raw=true)
+
+- Link al repositorio de GitHub: https://github.com/ezezbogar/TP0-Taller
 
