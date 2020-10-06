@@ -1505,3 +1505,5 @@ No se encontraron diferencias.
 
 ​	Como se pudo ver en el paso anterior, esta última entrega pasa correctamente todas las pruebas ejecutadas por el SERCOM
 
+![Captura del SERCOM](https://github.com/ezezbogar/TP0-Taller/blob/main/pruebas.png?raw=true)
+
